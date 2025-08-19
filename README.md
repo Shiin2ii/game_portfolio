@@ -1,7 +1,7 @@
 # 🎮 Game Portfolio - Trải Nghiệm Portfolio Tương Tác
-REVIEW: https://game-portfolio-azure.vercel.app/
-##Một website portfolio độc đáo với theme game/phiêu lưu, biến việc xem CV thành một cuộc phiêu lưu thú vị!
-
+Một website portfolio độc đáo với theme game/phiêu lưu, biến việc xem CV thành một cuộc phiêu lưu thú vị!
+##
+**REVIEW: https://game-portfolio-azure.vercel.app**
 ## ✨ Tính Năng Đặc Biệt
 
 ### 🎯 Game-like Experience
