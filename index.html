@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Portfolio - Hành Trình Sự Nghiệp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-container">
+            <div class="game-logo">PORTFOLIO ADVENTURE</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">Đang tải hành trình...</div>
+        </div>
+    </div>
+
+    <!-- Game UI -->
+    <div id="game-ui">
+        <div class="health-bar">
+            <div class="bar-label">PROGRESS</div>
+            <div class="bar-container">
+                <div class="bar-fill" id="progress-bar"></div>
+            </div>
+        </div>
+        <div class="level-indicator">
+            <span id="current-level">LEVEL 1</span>
+        </div>
+        <div class="sound-toggle" id="sound-toggle">
+            <i class="fas fa-volume-up"></i>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="nav-menu">
+        <div class="nav-item" data-target="hero">
+            <i class="fas fa-home"></i>
+            <span>Start</span>
+        </div>
+        <div class="nav-item" data-target="about">
+            <i class="fas fa-user"></i>
+            <span>About</span>
+        </div>
+        <div class="nav-item" data-target="skills">
+            <i class="fas fa-magic"></i>
+            <span>Skills</span>
+        </div>
+        <div class="nav-item" data-target="experience">
+            <i class="fas fa-sword"></i>
+            <span>Quest</span>
+        </div>
+        <div class="nav-item" data-target="projects">
+            <i class="fas fa-trophy"></i>
+            <span>Achievements</span>
+        </div>
+        <div class="nav-item" data-target="contact">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section - Level 1 -->
+        <section id="hero" class="game-section level-1">
+            <div class="parallax-bg"></div>
+            <div class="section-content">
+                <div class="hero-container">
+                    <div class="character-sprite">
+                        <img src="https://via.placeholder.com/150x150/4a90e2/ffffff?text=HERO" alt="Character" id="hero-avatar">
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="glitch-text" data-text="NGUYỄN VĂN A">NGUYỄN VĂN A</h1>
+                        <div class="typing-text">
+                            <span id="typed-text"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <button class="cta-button" id="start-adventure">
+                            <span>BẮT ĐẦU PHIÊU LƯU</span>
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-text">Cuộn xuống để tiếp tục</div>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- About Section - Level 2 -->
+        <section id="about" class="game-section level-2">
+            <div class="section-header">
+                <h2 class="section-title">LEVEL 2: XUẤT THÂN</h2>
+                <div class="level-badge">ABOUT ME</div>
+            </div>
+            <div class="section-content">
+                <div class="about-container">
+                    <div class="character-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-calendar"></i>
+                            <h3>Tuổi</h3>
+                            <span>25</span>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-map-marker"></i>
+                            <h3>Vị Trí</h3>
+                            <span>TP.HCM</span>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-code"></i>
+                            <h3>Class</h3>
+                            <span>Developer</span>
+                        </div>
+                    </div>
+                    <div class="story-text">
+                        <p>Chào mừng đến với hành trình của tôi! Tôi là một developer đam mê công nghệ, 
+                        luôn tìm kiếm những thử thách mới và cơ hội học hỏi. Với kinh nghiệm trong 
+                        phát triển web và mobile, tôi đã vượt qua nhiều "boss battle" trong sự nghiệp.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section - Level 3 -->
+        <section id="skills" class="game-section level-3">
+            <div class="section-header">
+                <h2 class="section-title">LEVEL 3: KỸ NĂNG</h2>
+                <div class="level-badge">SKILL TREE</div>
+            </div>
+            <div class="section-content">
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Frontend Magic</h3>
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend Powers</h3>
+                        <div class="skill-item">
+                            <span>Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Database</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section - Level 4 -->
+        <section id="experience" class="game-section level-4">
+            <div class="section-header">
+                <h2 class="section-title">LEVEL 4: NHIỆM VỤ</h2>
+                <div class="level-badge">QUEST LOG</div>
+            </div>
+            <div class="section-content">
+                <div class="timeline-container">
+                    <div class="quest-item">
+                        <div class="quest-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="quest-content">
+                            <h3>Senior Developer</h3>
+                            <span class="quest-date">2022 - Hiện tại</span>
+                            <p>Đã hoàn thành nhiều quest khó khăn, dẫn dắt team qua các dungeon phức tạp.</p>
+                        </div>
+                    </div>
+                    <div class="quest-item">
+                        <div class="quest-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="quest-content">
+                            <h3>Full Stack Developer</h3>
+                            <span class="quest-date">2020 - 2022</span>
+                            <p>Nâng cấp skills từ junior lên mid-level, unlock nhiều công nghệ mới.</p>
+                        </div>
+                    </div>
+                    <div class="quest-item">
+                        <div class="quest-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="quest-content">
+                            <h3>Junior Developer</h3>
+                            <span class="quest-date">2019 - 2020</span>
+                            <p>Bắt đầu hành trình coding, hoàn thành tutorial và first quest.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section - Level 5 -->
+        <section id="projects" class="game-section level-5">
+            <div class="section-header">
+                <h2 class="section-title">LEVEL 5: THÀNH TÍCH</h2>
+                <div class="level-badge">ACHIEVEMENTS</div>
+            </div>
+            <div class="section-content">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=E-COMMERCE" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Boss battle với React & Node.js</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Xem Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=MOBILE+APP" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Mobile Game App</h3>
+                            <p>Side quest với React Native</p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>Firebase</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Xem Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/300x200/9b59b6/ffffff?text=AI+CHATBOT" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>AI Chatbot</h3>
+                            <p>Epic quest với Python & AI</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>NLP</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Xem Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section - Final Level -->
+        <section id="contact" class="game-section level-6">
+            <div class="section-header">
+                <h2 class="section-title">FINAL LEVEL: LIÊN HỆ</h2>
+                <div class="level-badge">CONNECT</div>
+            </div>
+            <div class="section-content">
+                <div class="contact-container">
+                    <div class="contact-text">
+                        <h3>Sẵn sàng cho quest mới?</h3>
+                        <p>Hãy liên hệ để bắt đầu cuộc phiêu lưu tiếp theo!</p>
+                    </div>
+                    <div class="contact-methods">
+                        <a href="mailto:your.email@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@gmail.com</span>
+                        </a>
+                        <a href="tel:+84123456789" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+84 123 456 789</span>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/yourusername" class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Particle Effects -->
+    <div id="particles"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
